@@ -56,3 +56,18 @@ Finally, go back to the server application
          "<client application guid>"
  ],
 ```
+
+## Updating Configuration in Application
+
+Just update the properties inside Program.cs based on the values from the Azure AD Application Registrations above.
+
+``` c#
+        private static readonly string ClientSideClientId = "";
+        private static readonly string ClientSideTenantId = "";
+        private static readonly string ServerSideClientId = "";
+        private static readonly string ServerSideTenantId = "";
+        private static readonly string ServerSideClientSecret = "";
+
+```
+
+<https://github.com/jwendl/service-principal-service-example/blob/master/CreateServicePrincipal/Program.cs#L12-L16>
